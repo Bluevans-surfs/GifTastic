@@ -105,7 +105,7 @@
       // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
       var a = $("<button>");
       // Adding a class
-      a.addClass("cars");
+      a.addClass("cars w3-btn w3-black");
       // Adding a data-attribute with a value of the car at index i
       a.attr("data-name", cars[i]);
       // Providing the button's text with a value of the car at index i
@@ -133,6 +133,8 @@
 
       // calling renderButtons which handles the processing of our cars array
       renderButtons();
+
+      $("#entercar-input").val('');
 
     })
 
