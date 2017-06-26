@@ -6,6 +6,7 @@
   <title>Favorite Cars</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 
   <style type="text/css">
     button,
@@ -41,23 +42,7 @@
 
      }
 
-/*# {
-  float: left;
-  width: 250px;
-  height: 90px;*/
 
-
-   /* .container {
-      border: 1px solid purple;
-    }
-    .row {
-      border: 1px solid green;
-    }
-  .row div {
-      border: 1px solid red;
-      padding: 2em;
-    }
-*/
   </style>
 </head>
 
@@ -72,12 +57,12 @@
     <div id="cars-view"></div>
 
     <form id="entercar-form" align="center">
-      <label for="entercar-input" class="w3-button w3-black">Add a Car Type</label>
+      <label for="entercar-input">Add a Car Type</label>
       <input type="text" id="entercar-input"><br>
 
     <!-- Button triggers new movie to be added --> 
 
-    <input id="add-car" type="submit" value="Add a Car Type" class="w3-red">
+    <input id="add-car" type="submit" class="w3-btn w3-black" value="Add a Car Type">
     </form>
 
     </div>
@@ -196,36 +181,14 @@
       var animate = $(this).attr('data-a')
       $(this).attr('src', animate)
     }
-      // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
-      // var state = $(this).attr("data-state");
-      // console.log('stillAnimate', state)
-      // // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-      // // Then, set the image's data-state to animate
-      // // Else set src to the data-still value
-      // if (state === "still") {
-      //   $(this).attr("src", $(this).attr("data-animate"));
-      //   $(this).attr("data-state", "animate");
-      // } else {
-      //   $(this).attr("src", $(this).attr("data-still"));
-      //   $(this).attr("data-state", "still");
-      // }
+      
   }
 
 
 $(document).on('click', '.pic-align', stillAnimate)
 
 
-
-      //Put on line 106
-      // This is our onclick function to go from animation to a still image.  
-      // Select the image class name to select the image
-
-      // Create an actual onclick funcation for the image
-      // console log "working" or use alert to test 
-      // Use "this" to select the actual image
-      // console log the actual image link 
-      // Create if conditional that says if the image is a still image, then set the image source to the animated image and then else if image is an animatd image then set image source to still 
-
+    
     // Calling the renderButtons function at least once to display the initial list of movies
     renderButtons();
 
@@ -240,3 +203,4 @@ $(document).on('click', '.pic-align', stillAnimate)
 </body>
 
 </html>
+
